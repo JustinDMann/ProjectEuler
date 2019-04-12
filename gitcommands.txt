@@ -1,0 +1,19 @@
+touch <file name.txt> 									#create file of type txt
+git branch												#shows what branches there are and where you are currently
+			-d <branch name>							#delete branch name
+git checkout <branch name>								#check out branch
+			 -b <branch_name>							#create branch named branch name and checkout
+git commit -m "message"									#commit with message
+git config --global user.email "first.last@gmail.com"	#set global user email for git
+					user.name "First Last"				#set global user name for git
+git status												#see which files git knows exists/has changed
+git add <file name>										#add file to staging environment
+git push -u origin master								#push master to github
+
+
+
+
+
+
+Questions
+How do you set up SSH so you dont have to keep logging in to push to github
