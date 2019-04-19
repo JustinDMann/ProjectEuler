@@ -2,4 +2,6 @@ Project Euler login
 User: justin.mann
 password: janaemann
 ----------------------------------------------
-
+Github login
+User: justin.mann@liferay.com
+password: Janae323
