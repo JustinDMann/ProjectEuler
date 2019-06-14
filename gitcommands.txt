@@ -12,7 +12,8 @@ git push 												#push current branch to github
 		-u origin master								#push master to github
 git merge <branch name>									#while on master, merge branch into master
 
-
+Project Euler login: jmann312
+pw: janaemann
 
 
 

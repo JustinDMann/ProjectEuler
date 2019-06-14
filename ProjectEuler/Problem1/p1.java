@@ -2,8 +2,46 @@
  * The HelloWorldApp class implements an application that
  * simply prints "Hello World!" to standard output.
  */
+import java.util.Scanner;
+import java.util.ArrayList;
+
 class Problem1 {
     public static void main(String[] args) {
-        System.out.println("Hello World!"); // Display the string.
+    	System.out.println("Find the sum of all the multiples of 3 or 5 below X"); // Display the problem prompt
+    	System.out.print("What is X? "); // Ask for X to define problem
+
+//Ask the user to input upper bound of problem, and store
+		Scanner user_input = new Scanner( System.in); // Create a scanner object called user_input. Can reuse for each input
+    	int total;									  // Create a int variable to store input
+    	total = user_input.nextInt();				  // Stores next input
+
+//Create an array of all numbers below the upper bound
+    	int numbers[] = new int[total]; //Initialize an array called numbers that has total elements (0 to total-1)
+    	for (int i=0;i<total;++i){		//for loop filling array with all numbers from 0-99
+    		numbers[i]=i;
+    	}
+
+//Pick all numbers divisible by 3 or by 5
+    	ArrayList<Integer> selective = new ArrayList<Integer>();
+   		
+    	for (int j=0;j<total;++j){    		
+    		if(numbers[j] % 3 == 0 || numbers[j] % 5 ==0){
+    			selective.add(numbers[j]);
+    			}
+    	}
+
+//Sum all the numbers in your picked out list
+    	int sum = 0;
+    	for(int k = 0;k<selective.size();++k){
+    		sum = sum + selective.get(k); 
+    	}
+
+
+    	System.out.println(sum);
+
+//    	for (int element = 0;element<selectivecount;++element){
+  //  		System.out.print(selective[element]+" ");
+   // 	}
+       
     }
 }
