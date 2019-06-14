@@ -17,4 +17,3 @@ git merge <branch name>									#while on master, merge branch into master
 
 
 Questions
-How do you set up SSH so you dont have to keep logging in to push to github
