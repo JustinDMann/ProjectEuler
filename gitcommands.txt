@@ -10,6 +10,7 @@ git status												#see which files git knows exists/has changed
 git add <file or folder name>							#add file or folder to staging environment
 git push 												#push current branch to github
 		-u origin master								#push master to github
+git pull												#grab any changes from master. run this before running git pull
 git merge <branch name>									#while on master, merge branch into master
 
 Project Euler login: jmann312
